@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 800px;
+}
+
+.score {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.score h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4ef744;
+    text-shadow: 0 0 10px rgba(78, 247, 68, 0.5);
+}
+
+#pongCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #4ef744;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(78, 247, 68, 0.3);
+    cursor: none;
+    margin: 20px 0;
+}
+
+.instructions {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.instructions p {
+    margin: 5px 0;
+    color: #aaa;
+}
+
+.instructions strong {
+    color: #4ef744;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    #pongCanvas {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .scoreboard {
+        width: 100%;
+        max-width: 800px;
+    }
+}
